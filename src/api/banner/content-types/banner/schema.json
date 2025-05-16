@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "banners",
+  "info": {
+    "singularName": "banner",
+    "pluralName": "banners",
+    "displayName": "Banner",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "MainText": {
+      "type": "string"
+    },
+    "SubText": {
+      "type": "string"
+    },
+    "BannerImage_Video": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "WebsiteDomain": {
+      "type": "string"
+    }
+  }
+}
