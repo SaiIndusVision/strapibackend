@@ -18,7 +18,7 @@ export interface FrameworksCfFrameworks extends Struct.ComponentSchema {
     displayName: 'CF_Frameworks';
   };
   attributes: {
-    Framework: Schema.Attribute.String;
+    FrameworkName: Schema.Attribute.String;
   };
 }
 

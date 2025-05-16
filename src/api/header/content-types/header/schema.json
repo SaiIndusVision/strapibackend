@@ -45,7 +45,11 @@
       "type": "string"
     },
     "SubHeader": {
-      "type": "string"
+      "type": "enumeration",
+      "enum": [
+        "True",
+        "False"
+      ]
     }
   }
 }

@@ -442,7 +442,7 @@ export interface ApiHeaderHeader extends Struct.CollectionTypeSchema {
     Placeholder5: Schema.Attribute.String;
     Placeholder6: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
-    SubHeader: Schema.Attribute.String;
+    SubHeader: Schema.Attribute.Enumeration<['True', 'False']>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
