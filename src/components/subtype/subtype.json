@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_subtype_subtypes",
+  "info": {
+    "displayName": "Subtype"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "route": {
+      "type": "string"
+    }
+  }
+}

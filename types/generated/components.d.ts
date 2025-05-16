@@ -22,6 +22,31 @@ export interface FrameworksCfFrameworks extends Struct.ComponentSchema {
   };
 }
 
+export interface HeadersHeaders extends Struct.ComponentSchema {
+  collectionName: 'components_headers_headers';
+  info: {
+    description: '';
+    displayName: 'headers';
+    icon: 'apps';
+  };
+  attributes: {
+    routes: Schema.Attribute.String;
+    Subtype: Schema.Attribute.Component<'subtype.subtype', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SubtypeSubtype extends Struct.ComponentSchema {
+  collectionName: 'components_subtype_subtypes';
+  info: {
+    displayName: 'Subtype';
+  };
+  attributes: {
+    route: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface WebsitesWebsites extends Struct.ComponentSchema {
   collectionName: 'components_websites_websites';
   info: {
@@ -37,6 +62,8 @@ declare module '@strapi/strapi' {
     export interface ComponentSchemas {
       'advisory-services.advisory-services': AdvisoryServicesAdvisoryServices;
       'frameworks.cf-frameworks': FrameworksCfFrameworks;
+      'headers.headers': HeadersHeaders;
+      'subtype.subtype': SubtypeSubtype;
       'websites.websites': WebsitesWebsites;
     }
   }
