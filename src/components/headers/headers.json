@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_headers_headers",
+  "info": {
+    "displayName": "headers",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "routes": {
+      "type": "string"
+    },
+    "Subtype": {
+      "type": "component",
+      "repeatable": true,
+      "component": "subtype.subtype"
+    }
+  }
+}

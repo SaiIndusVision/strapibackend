@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_frameworks_cf_frameworks",
+  "info": {
+    "displayName": "CF_Frameworks",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "FrameworkName": {
+      "type": "string"
+    }
+  }
+}

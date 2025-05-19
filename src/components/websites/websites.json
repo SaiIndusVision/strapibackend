@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_websites_websites",
+  "info": {
+    "displayName": "Websites"
+  },
+  "options": {},
+  "attributes": {
+    "Website": {
+      "type": "string"
+    }
+  }
+}

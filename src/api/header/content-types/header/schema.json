@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "headers",
+  "info": {
+    "singularName": "header",
+    "pluralName": "headers",
+    "displayName": "Header",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Placeholder1": {
+      "type": "string"
+    },
+    "Placeholder2": {
+      "type": "string"
+    },
+    "Placeholder3": {
+      "type": "string"
+    },
+    "Placeholder4": {
+      "type": "string"
+    },
+    "Placeholder5": {
+      "type": "string"
+    },
+    "Framework": {
+      "type": "component",
+      "repeatable": true,
+      "component": "frameworks.cf-frameworks"
+    },
+    "AdvisoryServices": {
+      "type": "component",
+      "repeatable": true,
+      "component": "advisory-services.advisory-services"
+    },
+    "HeaderAppliedTo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "websites.websites"
+    },
+    "Placeholder6": {
+      "type": "string"
+    },
+    "SubHeader": {
+      "type": "enumeration",
+      "enum": [
+        "True",
+        "False"
+      ]
+    }
+  }
+}

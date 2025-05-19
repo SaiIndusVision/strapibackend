@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "header_websites",
+  "info": {
+    "singularName": "header-website",
+    "pluralName": "header-websites",
+    "displayName": "HeaderWebsite"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "headerData": {
+      "type": "component",
+      "repeatable": true,
+      "component": "headers.headers"
+    }
+  }
+}

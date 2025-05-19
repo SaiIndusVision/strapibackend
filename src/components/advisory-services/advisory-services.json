@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_advisory_services_advisory_services",
+  "info": {
+    "displayName": "AdvisoryServices"
+  },
+  "options": {},
+  "attributes": {
+    "AdvServices": {
+      "type": "string"
+    }
+  }
+}
