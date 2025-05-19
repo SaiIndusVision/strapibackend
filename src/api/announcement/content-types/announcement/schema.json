@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "announcements",
+  "info": {
+    "singularName": "announcement",
+    "pluralName": "announcements",
+    "displayName": "Announcement"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "announcementText": {
+      "type": "text"
+    },
+    "showAnnouncement": {
+      "type": "boolean"
+    }
+  }
+}

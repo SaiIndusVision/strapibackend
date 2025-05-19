@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_uses",
+  "info": {
+    "singularName": "about-us",
+    "pluralName": "about-uses",
+    "displayName": "aboutUs",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "titleText": {
+      "type": "text"
+    },
+    "descriptionText": {
+      "type": "text"
+    },
+    "aboutImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "aboutDescription": {
+      "type": "text"
+    },
+    "buttonText": {
+      "type": "text"
+    },
+    "webSiteKeys": {
+      "type": "component",
+      "repeatable": false,
+      "component": "web-site-keys.web-site-key"
+    }
+  }
+}

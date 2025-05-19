@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_web_site_keys_web_site_keys",
+  "info": {
+    "displayName": "webSiteKey",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "webSiteKeys": {
+      "type": "enumeration",
+      "enum": [
+        " compliancefoundry",
+        "    rapidsoc2.com",
+        "    fixplanai",
+        "    happyHippa",
+        "    comperiscybersecurity"
+      ]
+    }
+  }
+}

@@ -47,6 +47,26 @@ export interface SubtypeSubtype extends Struct.ComponentSchema {
   };
 }
 
+export interface WebSiteKeysWebSiteKey extends Struct.ComponentSchema {
+  collectionName: 'components_web_site_keys_web_site_keys';
+  info: {
+    description: '';
+    displayName: 'webSiteKey';
+    icon: 'bulletList';
+  };
+  attributes: {
+    webSiteKeys: Schema.Attribute.Enumeration<
+      [
+        ' compliancefoundry',
+        '    rapidsoc2.com',
+        '    fixplanai',
+        '    happyHippa',
+        '    comperiscybersecurity',
+      ]
+    >;
+  };
+}
+
 export interface WebsitesWebsites extends Struct.ComponentSchema {
   collectionName: 'components_websites_websites';
   info: {
@@ -64,6 +84,7 @@ declare module '@strapi/strapi' {
       'frameworks.cf-frameworks': FrameworksCfFrameworks;
       'headers.headers': HeadersHeaders;
       'subtype.subtype': SubtypeSubtype;
+      'web-site-keys.web-site-key': WebSiteKeysWebSiteKey;
       'websites.websites': WebsitesWebsites;
     }
   }
