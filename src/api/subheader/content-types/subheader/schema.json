@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subheaders",
+  "info": {
+    "singularName": "subheader",
+    "pluralName": "subheaders",
+    "displayName": "Subheader"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "subheader": {
+      "type": "component",
+      "repeatable": true,
+      "component": "headers.headers"
+    }
+  }
+}

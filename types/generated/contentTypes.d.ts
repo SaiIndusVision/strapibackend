@@ -547,6 +547,34 @@ export interface ApiHeaderHeader extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiSubheaderSubheader extends Struct.CollectionTypeSchema {
+  collectionName: 'subheaders';
+  info: {
+    displayName: 'Subheader';
+    pluralName: 'subheaders';
+    singularName: 'subheader';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::subheader.subheader'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    subheader: Schema.Attribute.Component<'headers.headers', true>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiWhoWeAreWhoWeAre extends Struct.CollectionTypeSchema {
   collectionName: 'who_we_ares';
   info: {
@@ -1097,6 +1125,7 @@ declare module '@strapi/strapi' {
       'api::banner.banner': ApiBannerBanner;
       'api::header-website.header-website': ApiHeaderWebsiteHeaderWebsite;
       'api::header.header': ApiHeaderHeader;
+      'api::subheader.subheader': ApiSubheaderSubheader;
       'api::who-we-are.who-we-are': ApiWhoWeAreWhoWeAre;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
