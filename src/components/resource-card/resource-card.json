@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_resource_card_resource_cards",
+  "info": {
+    "displayName": "resourceCard"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

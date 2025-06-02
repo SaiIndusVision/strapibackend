@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_accordion_accordions",
+  "info": {
+    "displayName": "Accordion",
+    "icon": "arrowDown",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "accordionId": {
+      "type": "integer"
+    },
+    "accordionTitle": {
+      "type": "string"
+    },
+    "accordionImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "accordionContentDescription": {
+      "type": "text"
+    }
+  }
+}

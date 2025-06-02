@@ -30,6 +30,14 @@
     },
     "WebsiteDomain": {
       "type": "string"
+    },
+    "ClientLogo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "client-logo.client-logo"
+    },
+    "brandHeadingText": {
+      "type": "text"
     }
   }
 }

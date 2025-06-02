@@ -10,11 +10,11 @@
     "webSiteKeys": {
       "type": "enumeration",
       "enum": [
-        " compliancefoundry",
-        "    rapidsoc2.com",
-        "    fixplanai",
-        "    happyHippa",
-        "    comperiscybersecurity"
+        "compliancefoundry",
+        "rapidsoc2.com",
+        "fixplanai",
+        "happyHippa",
+        "comperiscybersecurity"
       ]
     }
   }

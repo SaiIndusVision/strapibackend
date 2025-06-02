@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_client_logo_client_logos",
+  "info": {
+    "displayName": "ClientLogo"
+  },
+  "options": {},
+  "attributes": {
+    "ClientLogo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

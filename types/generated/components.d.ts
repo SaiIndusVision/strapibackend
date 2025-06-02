@@ -1,5 +1,22 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface AccordionAccordion extends Struct.ComponentSchema {
+  collectionName: 'components_accordion_accordions';
+  info: {
+    description: '';
+    displayName: 'Accordion';
+    icon: 'arrowDown';
+  };
+  attributes: {
+    accordionContentDescription: Schema.Attribute.Text;
+    accordionId: Schema.Attribute.Integer;
+    accordionImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    accordionTitle: Schema.Attribute.String;
+  };
+}
+
 export interface AdvisoryServicesAdvisoryServices
   extends Struct.ComponentSchema {
   collectionName: 'components_advisory_services_advisory_services';
@@ -8,6 +25,18 @@ export interface AdvisoryServicesAdvisoryServices
   };
   attributes: {
     AdvServices: Schema.Attribute.String;
+  };
+}
+
+export interface ClientLogoClientLogo extends Struct.ComponentSchema {
+  collectionName: 'components_client_logo_client_logos';
+  info: {
+    displayName: 'ClientLogo';
+  };
+  attributes: {
+    ClientLogo: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
   };
 }
 
@@ -36,6 +65,18 @@ export interface HeadersHeaders extends Struct.ComponentSchema {
   };
 }
 
+export interface ResourceCardResourceCard extends Struct.ComponentSchema {
+  collectionName: 'components_resource_card_resource_cards';
+  info: {
+    displayName: 'resourceCard';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    icon: Schema.Attribute.String;
+    title: Schema.Attribute.Text;
+  };
+}
+
 export interface SubtypeSubtype extends Struct.ComponentSchema {
   collectionName: 'components_subtype_subtypes';
   info: {
@@ -57,11 +98,11 @@ export interface WebSiteKeysWebSiteKey extends Struct.ComponentSchema {
   attributes: {
     webSiteKeys: Schema.Attribute.Enumeration<
       [
-        ' compliancefoundry',
-        '    rapidsoc2.com',
-        '    fixplanai',
-        '    happyHippa',
-        '    comperiscybersecurity',
+        'compliancefoundry',
+        'rapidsoc2.com',
+        'fixplanai',
+        'happyHippa',
+        'comperiscybersecurity',
       ]
     >;
   };
@@ -80,9 +121,12 @@ export interface WebsitesWebsites extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'accordion.accordion': AccordionAccordion;
       'advisory-services.advisory-services': AdvisoryServicesAdvisoryServices;
+      'client-logo.client-logo': ClientLogoClientLogo;
       'frameworks.cf-frameworks': FrameworksCfFrameworks;
       'headers.headers': HeadersHeaders;
+      'resource-card.resource-card': ResourceCardResourceCard;
       'subtype.subtype': SubtypeSubtype;
       'web-site-keys.web-site-key': WebSiteKeysWebSiteKey;
       'websites.websites': WebsitesWebsites;

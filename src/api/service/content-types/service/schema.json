@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "Service",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "serviceHeading": {
+      "type": "string"
+    },
+    "serviceSubheading": {
+      "type": "text"
+    },
+    "servicesDescription": {
+      "type": "string"
+    },
+    "accordionSection": {
+      "type": "component",
+      "repeatable": true,
+      "component": "accordion.accordion"
+    },
+    "WebsiteDomain": {
+      "type": "component",
+      "repeatable": false,
+      "component": "web-site-keys.web-site-key"
+    }
+  }
+}

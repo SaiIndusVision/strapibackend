@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "resources",
+  "info": {
+    "singularName": "resource",
+    "pluralName": "resources",
+    "displayName": "Resource",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "resourceHeading": {
+      "type": "string"
+    },
+    "resourceSubHeading": {
+      "type": "text"
+    },
+    "resourceCard": {
+      "type": "component",
+      "repeatable": true,
+      "component": "resource-card.resource-card"
+    }
+  }
+}
