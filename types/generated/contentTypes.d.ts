@@ -611,6 +611,10 @@ export interface ApiResourceResource extends Struct.CollectionTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    WebsiteDomain: Schema.Attribute.Component<
+      'web-site-keys.web-site-key',
+      false
+    >;
   };
 }
 
