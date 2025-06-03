@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "api_key_1s",
+  "info": {
+    "singularName": "api-key-1",
+    "pluralName": "api-key-1s",
+    "displayName": "API key 1"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "field1": {
+      "type": "string"
+    },
+    "field2": {
+      "type": "string"
+    },
+    "field3": {
+      "type": "string"
+    }
+  }
+}

@@ -442,6 +442,36 @@ export interface ApiAnnouncementAnnouncement
   };
 }
 
+export interface ApiApiKey1ApiKey1 extends Struct.CollectionTypeSchema {
+  collectionName: 'api_key_1s';
+  info: {
+    displayName: 'API key 1';
+    pluralName: 'api-key-1s';
+    singularName: 'api-key-1';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    field1: Schema.Attribute.String;
+    field2: Schema.Attribute.String;
+    field3: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::api-key-1.api-key-1'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiBannerBanner extends Struct.CollectionTypeSchema {
   collectionName: 'banners';
   info: {
@@ -1229,6 +1259,7 @@ declare module '@strapi/strapi' {
       'admin::user': AdminUser;
       'api::about-us.about-us': ApiAboutUsAboutUs;
       'api::announcement.announcement': ApiAnnouncementAnnouncement;
+      'api::api-key-1.api-key-1': ApiApiKey1ApiKey1;
       'api::banner.banner': ApiBannerBanner;
       'api::contact-form.contact-form': ApiContactFormContactForm;
       'api::header-website.header-website': ApiHeaderWebsiteHeaderWebsite;
